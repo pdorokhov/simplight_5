@@ -1,5 +1,3 @@
--- [[ Cheatsheet for LUA from http://www.newthinktank.com/2015/06/learn-lua-one-video/]]
-
 -- Prints to the screen (Can end with semicolon)
 print("Hello World")
 
