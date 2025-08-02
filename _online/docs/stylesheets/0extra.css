@@ -1,0 +1,126 @@
+:root > * {
+  --md-primary-fg-color:        #0060D4;
+  --md-typeset-mark-color:      hsla(200, 21%, 62%, 0.06);
+  --md-code-hl-color--light:    #0060D4;
+  --md-footer-bg-color:         #0060D4;
+  --md-accent-fg-color:         #0060D4;
+}
+
+/* Увеличиваем максимальную ширину центральной колонки */
+.md-grid {
+  max-width: 2000px; /* по умолчанию 960px или 100% */
+}
+
+/* Сужаем левую панель навигации */
+.md-sidebar--primary {
+  flex: 0 0 350px; /* было примерно 300px */
+}
+
+/* Сужаем правую панель (если есть, например оглавление) */
+.md-sidebar--secondary {
+  flex: 0 0 250px; /* можно ещё меньше */
+}
+
+/* body { */
+  /* zoom: 100%; Масштаб страницы */
+  /* font-weight: 300; Тонкий шрифт по умолчанию */
+/* } */
+
+/* Базовый текст */
+.md-typeset {
+  font-size: 0.700rem; /* ~10px */
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Более плотные строки внутри списков */
+.md-typeset ul li,
+.md-typeset ol li {
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Жирный текст в основном контенте — делаем ярче */
+ .md-typeset p strong,
+.md-typeset p b,
+.md-typeset li strong,
+.md-typeset li b {
+  font-weight: 700;
+} 
+
+/* Заголовки */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  font-weight: 300;
+}
+
+.md-typeset h1 { font-size: 1rem; }
+.md-typeset h2 { font-size: 0.9rem; }
+.md-typeset h3 { font-size: 0.8rem; }
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 { font-size: 0.75rem; }
+
+/* Навигация (левая панель) */
+.md-nav,
+.md-nav__title,
+.md-nav__link {
+  font-size: 0.700rem;
+  font-weight: 300;
+  line-height: 1.0;
+}
+
+/* Admonitions */
+/* .md-typeset .admonition-title,
+.md-typeset .admonition-title strong,
+.md-typeset .admonition-title b {
+  font-size: 0.6rem !important;
+  font-weight: 300 !important;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+} */
+
+/* Заголовок в admonition */
+/* .md-typeset .admonition-title {
+  font-size: 0.7rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+} */
+
+/* Admonitions (текст внутри блока) */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.625rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* Заголовок в admonition — чуть меньше, но жирный */
+.md-typeset .admonition-title,
+.md-typeset .admonition-title strong,
+.md-typeset .admonition-title b {
+  font-size: 0.60rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+}
+
+/* Код */
+.md-typeset code,
+.md-typeset pre,
+.md-typeset .highlight {
+  font-size: 0.625rem;
+  font-weight: 300;
+}
+
+/* Подвал */
+.md-footer {
+  font-size: 0.625rem;
+  font-weight: 300;
+}

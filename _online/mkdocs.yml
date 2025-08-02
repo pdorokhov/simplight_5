@@ -1,0 +1,51 @@
+site_name: Симплайт 5
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  logo: assets/logo_white.png
+  favicon: assets/logo_blue.png
+  language: ru
+  features:
+    # - navigation.instant
+    # - navigation.tabs
+    # - content.tabs.link
+    # - navigation.sections
+    # - navigation.indexes
+    # - navigation.expand
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+
+extra:
+  homepage: https://simplight.ru/simplight5/
+
+  plugins:
+  - search
+  - print-site
+  - pdf-export:
+      enabled_if_env: ENABLE_PDF_EXPORT
+
+nav:
+  - Вводная часть:
+      - О системе: intro/main.md
+      - Основные компоненты: intro/parts.md
+      - Лицензирование: intro/license.md
+      - Установка ПО: intro/install.md
+
+
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - toc:
+     permalink: true
