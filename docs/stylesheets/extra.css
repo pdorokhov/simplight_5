@@ -1,0 +1,72 @@
+:root > * {
+  --md-primary-fg-color:        #0060D4;
+  --md-typeset-mark-color:      hsla(200, 21%, 62%, 0.06);
+  --md-code-hl-color--light:    #0060D4;
+  --md-footer-bg-color:         #0060D4;
+  --md-accent-fg-color:         #0060D4;
+}
+
+.md-typeset h1 { font-size: 1.2rem; }
+.md-typeset h2 { font-size: 1.0rem; }
+.md-typeset h3 { font-size: 0.8rem; }
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 { font-size: 0.75rem; }
+
+/* Скрываем название сайта в левой боковой панели */
+.md-nav__title {
+  display: none;
+}
+
+/* Увеличиваем максимальную ширину центральной колонки */
+.md-grid {
+  max-width: 2000px; /* по умолчанию 960px или 100% */
+}
+
+/* Сужаем левую панель навигации */
+.md-sidebar--primary {
+  flex: 0 0 350px; /* было примерно 300px */
+}
+
+/* Сужаем правую панель (если есть, например оглавление) */
+.md-sidebar--secondary {
+  flex: 0 0 250px; /* можно ещё меньше */
+}
+
+body {
+  /* zoom: 100%; Масштаб страницы */
+  font-weight: 300; /*Тонкий шрифт по умолчанию */
+} 
+
+/* Более плотные строки внутри списков */
+.md-typeset ul li,
+.md-typeset ol li {
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Навигация (левая панель) */
+.md-nav,
+.md-nav__title,
+.md-nav__link {
+  font-size: 0.700rem;
+  font-weight: 300;
+  line-height: 1.0;
+}
+
+/* Базовый текст */
+.md-typeset {
+  font-size: 0.700rem; /* ~10px */
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Жирный текст в основном контенте — делаем ярче */
+ .md-typeset p strong,
+.md-typeset p b,
+.md-typeset li strong,
+.md-typeset li b {
+  font-weight: 700;
+} 
+
