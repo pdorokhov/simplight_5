@@ -22,12 +22,13 @@ theme:
 
 extra:
   homepage: https://simplight.ru/simplight5/
+  generator: false
 
-  plugins:
+plugins:
   - search
   - print-site
-  - pdf-export:
-      enabled_if_env: ENABLE_PDF_EXPORT
+  # - pdf-export:
+  #     enabled_if_env: ENABLE_PDF_EXPORT
 
 nav:
   - Вводная часть:

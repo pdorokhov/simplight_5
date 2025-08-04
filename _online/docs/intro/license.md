@@ -39,6 +39,30 @@
       white-space: nowrap;
     }
   }
+
+  /*------------------------------*/
+  @media print {
+  table.compact-table {
+    font-size: 8px;
+    width: 100%;
+    table-layout: auto;
+    word-wrap: break-word;
+  }
+
+  table.compact-table th,
+  table.compact-table td {
+    word-break: break-word;
+    white-space: normal;
+    padding: 2px 4px;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+
 </style>
 
 <table class="compact-table">
